@@ -18,7 +18,7 @@ convert the response Json or XML data to a Deserialized Object <T>.
 
 ## Authors
 
-- [Jason Riley](mailto:rileyja@protonmail.com)
+- [Jason Riley] Rileyja@protonmail.com
 
 
 ## Features
@@ -27,13 +27,35 @@ convert the response Json or XML data to a Deserialized Object <T>.
 - Convert Json or XML to Object<T>
 - Disposable
 
+
 ## Support
 
-For support, email rileyja@protonmail.com(mailto:rileyja@protonmail.com)
+For support, email rileyja@protonmail.com
 
 
 ## 🚀 About Me
 I am not your normal application developer. I can weld, rebuild engines, 
 wire houses (electrical), plumb houses, hunt, fish and brew beer 🍺
 
- 
+
+
+## XML -> Json Deserialization GenericListConverter<T>
+When older sql servers such as SQL 2016 have stored proceedures that only export data AS XML, if an item that is expected to be a collection
+only has 1 object Json Deserialization will throw and error expecting a collection.  
+# Usage
+     public class IttyBittyExample
+        {
+            [JsonConverter(typeof(GenericListConverter<string>))]
+            public List<string> TinyThingie { get; set; }
+        }
+
+This will ensure if XML being converterted to Json will deserialize a single 
+
+
+    <IttyBittyExample>
+        <TinyThingie>litte thing</TinyThingie>
+    </IttyBittyExample>
+
+This will deserialize TinyThingie to List<string> instead of a single string object.
+
+
