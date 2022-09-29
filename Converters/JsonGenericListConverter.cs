@@ -3,6 +3,10 @@ using Newtonsoft.Json.Linq;
 
 namespace Sprocket.Converters;
 
+/// <summary>
+/// Converts Singleton objects to List on Json Deserialization
+/// </summary>
+/// <typeparam name="T"></typeparam>
 public class GenericListConverter<T> : JsonConverter
 {
     public override bool CanConvert(Type objectType)
