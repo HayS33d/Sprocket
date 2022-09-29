@@ -29,7 +29,7 @@ convert the response Json or XML data to a Deserialized Object <T>.
 
 ## Support
 
-For support, email rileyja@protonmail.com(mailto:rileyja@protonmail.com)
+For support, email rileyja@protonmail.com
 
 
 ## 🚀 About Me
