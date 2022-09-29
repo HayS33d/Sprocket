@@ -18,7 +18,7 @@ convert the response Json or XML data to a Deserialized Object <T>.
 
 ## Authors
 
-- [Jason Riley]
+- [Jason Riley](mailto:rileyja@protonmail.com)
 
 
 ## Features
@@ -26,5 +26,14 @@ convert the response Json or XML data to a Deserialized Object <T>.
 - Add Parameters with a single call
 - Convert Json or XML to Object<T>
 - Disposable
+
+## Support
+
+For support, email rileyja@protonmail.com(mailto:rileyja@protonmail.com)
+
+
+## 🚀 About Me
+I am not your normal application developer. I can weld, rebuild engines, 
+wire houses (electrical), plumb houses, hunt, fish and brew beer 🍺
 
  
